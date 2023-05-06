@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0px 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 620px 500px 500px 300px 50px;
+}
+
+.top{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+}
+
+.flex>a{
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(50, 238, 91);
+    font-weight: bold;
+}
+
+a:hover{
+    color:rgb(76, 224, 224);
+    cursor: pointer;
+}
+
+.top-content{
+    padding: 50px;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+}
+
+.inside-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[alt="logo"]{
+    border-radius: 50%;
+}
+
+.about{
+    border: 1px solid red;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gallery-heading{
+    margin: 20px 0px 40px 0px;
+    text-align: center;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 'apple amazon google',
+    'ms meta';
+}
+
+.apple{
+    grid-area: 'apple';
+    text-align: center;
+}
+
+.amazon{
+    grid-area: 'amazon';
+    text-align: center;
+}
+
+.google{
+    grid-area: 'google';
+    text-align: center;
+}
+
+.ms{
+    grid-area: 'ms';
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+.meta{
+    grid-area: 'meta';
+    margin-left: 0px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(156, 111, 199);
+}
+
+.contact-heading{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+    color:aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
